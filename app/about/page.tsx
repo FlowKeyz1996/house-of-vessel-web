@@ -143,7 +143,7 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-20 grid gap-8 md:grid-cols-3">
-            <div className="rounded-3xl bg-white p-10 shadow transition-all duration-300 hover:-translate-y-3 hover:shadow-xl">
+            <div className="rounded-3xl bg-white p-10 shadow transition-all duration-300 hover:-translate-y-3 hover:shadow-xl cursor-pointer">
               <BookOpen
                 size={48}
                 className="text-[#6b1b9a]"
@@ -158,7 +158,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="rounded-3xl bg-white p-10 shadow transition-all duration-300 hover:-translate-y-3 hover:shadow-xl">
+            <div className="rounded-3xl bg-white p-10 shadow transition-all duration-300 hover:-translate-y-3 hover:shadow-xl cursor-pointer">
               <Heart
                 size={48}
                 className="text-[#FFA600]"
@@ -173,7 +173,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="rounded-3xl bg-white p-10 shadow transition-all duration-300 hover:-translate-y-3 hover:shadow-xl">
+            <div className="rounded-3xl bg-white p-10 shadow transition-all duration-300 hover:-translate-y-3 hover:shadow-xl cursor-pointer">
               <Users
                 size={48}
                 className="text-[#6b1b9a]"
