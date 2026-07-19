@@ -2,9 +2,23 @@
 
 import { motion } from "framer-motion";
 
-export default function AnimatedLogo() {
+interface AnimatedLogoProps {
+  size?: number;
+}
+
+export default function AnimatedLogo({
+  size = 420,
+}: AnimatedLogoProps) {
+  // Base design width
+  const scale = size / 420;
+
   return (
-    <div className="relative w-[420px]">
+    <div
+      className="relative"
+      style={{
+        width: size,
+      }}
+    >
       {/* Logo */}
       <motion.img
         src="/hov-logo.jpeg"
@@ -26,13 +40,14 @@ export default function AnimatedLogo() {
 
       {/* Oil Stream */}
       <motion.div
-        className="absolute w-[6px] rounded-full bg-white"
+        className="absolute rounded-full bg-white"
         style={{
-          left: 126,
-          top: 214,
+          width: 6 * scale,
+          left: 126 * scale,
+          top: 214 * scale,
         }}
         animate={{
-          height: [0, 80, 80, 0],
+          height: [0, 80 * scale, 80 * scale, 0],
           opacity: [0, 1, 1, 0],
         }}
         transition={{
@@ -42,18 +57,13 @@ export default function AnimatedLogo() {
         }}
       />
 
-      {/* Droplet 1 */}
-      <Drop delay={0} left={118} />
-
-      {/* Droplet 2 */}
-      <Drop delay={0.3} left={162} />
-
-      {/* Droplet 3 */}
-      <Drop delay={0.6} left={146} />
+      <Drop delay={0} left={118 * scale} top={290 * scale} scale={scale} />
+      <Drop delay={0.3} left={162 * scale} top={290 * scale} scale={scale} />
+      <Drop delay={0.6} left={146 * scale} top={290 * scale} scale={scale} />
 
       {/* Glow */}
       <motion.div
-        className="absolute inset-0 rounded-full pointer-events-none"
+        className="pointer-events-none absolute inset-0"
         animate={{
           opacity: [0.15, 0.45, 0.15],
         }}
@@ -62,7 +72,7 @@ export default function AnimatedLogo() {
           repeat: Infinity,
         }}
         style={{
-          boxShadow: "0 0 40px rgba(255,255,255,.35)",
+          boxShadow: `0 0 ${40 * scale}px rgba(255,255,255,.35)`,
         }}
       />
     </div>
@@ -72,18 +82,22 @@ export default function AnimatedLogo() {
 interface DropProps {
   delay: number;
   left: number;
+  top: number;
+  scale: number;
 }
 
-function Drop({ delay, left }: DropProps) {
+function Drop({ delay, left, top, scale }: DropProps) {
   return (
     <motion.div
-      className="absolute h-3 w-3 rotate-45 rounded-full bg-white"
+      className="absolute rotate-45 rounded-full bg-white"
       style={{
         left,
-        top: 290,
+        top,
+        width: 12 * scale,
+        height: 12 * scale,
       }}
       animate={{
-        y: [0, 45],
+        y: [0, 45 * scale],
         opacity: [0, 1, 0],
       }}
       transition={{
