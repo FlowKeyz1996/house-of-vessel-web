@@ -1,6 +1,7 @@
 import HeroSection from "./components/secondary-components/HeroSection";
 import Navbar from "./components/primary-components/Navbar";
 import Footer from "./components/primary-components/Footer";
+import AboutUsSection from "./components/secondary-components/AboutUsSection";
 
 export default function Home() {
   return (
@@ -8,30 +9,32 @@ export default function Home() {
       <Navbar />
       <HeroSection />
 
-      {/* About Section */}
+     
       <section className="min-h-screen bg-white">
-        {/* Add your About component here */}
+      
+        <AboutUsSection/>
+        
       </section>
 
-      {/* Sermons */}
+      
+      {/* <section className="min-h-screen bg-gray-50">
+       
+      </section>
+
+     
+      <section className="min-h-screen bg-white">
+     
+      </section>
+
+      
       <section className="min-h-screen bg-gray-50">
-        {/* Sermons */}
+     
       </section>
 
-      {/* Ministries */}
+      
       <section className="min-h-screen bg-white">
-        {/* Ministries */}
-      </section>
-
-      {/* Gallery */}
-      <section className="min-h-screen bg-gray-50">
-        {/* Gallery */}
-      </section>
-
-      {/* Contact */}
-      <section className="min-h-screen bg-white">
-        {/* Contact */}
-      </section>
+        
+      </section> */}
       <Footer />
     </main>
   );

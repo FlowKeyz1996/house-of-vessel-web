@@ -147,7 +147,7 @@ const Footer = () => {
 
               <Link
                 href="#"
-                className="flex items-center justify-center gap-3 rounded-xl border border-white/20 bg-white/10 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-gradient-to-r hover:from-pink-500 hover:to-orange-400"
+                className="flex items-center justify-center gap-3 rounded-xl border border-white/20 bg-white/10 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-linear-to-r hover:from-pink-500 hover:to-orange-400"
               >
                 <FaInstagram size={20} />
                 Instagram
