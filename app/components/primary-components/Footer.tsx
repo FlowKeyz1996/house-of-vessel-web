@@ -33,7 +33,7 @@ const Footer = () => {
       <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-[#FFA600]/10 blur-[140px]" />
 
       {/* Top Border */}
-      <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#6b1b9a] to-transparent" />
+      <div className="h-0.5 w-full bg-linear-to-r from-transparent via-[#6b1b9a] to-transparent" />
 
       <div className="relative mx-auto max-w-7xl px-6 py-20">
         <div className="grid gap-16 md:grid-cols-2 lg:grid-cols-4">
