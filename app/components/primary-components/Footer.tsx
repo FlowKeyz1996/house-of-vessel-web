@@ -91,9 +91,10 @@ const Footer = () => {
                   size={20}
                 />
                 <span>
-                  Your Ministry Address
+                  Opposite mathis Plaza,
                   <br />
-                  City, State, Country
+                  Off Yakowa Road,<br/>
+                  Beside Triple A Homes, Janruwa, Kaduna State, Nigeria.
                 </span>
               </div>
 
@@ -104,7 +105,7 @@ const Footer = () => {
 
               <div className="flex items-center gap-4">
                 <Mail className="text-[#FFA600]" size={20} />
-                <span>info@houseofvessels.org</span>
+                <span>houseofvesselssocials</span>
               </div>
             </div>
           </div>
