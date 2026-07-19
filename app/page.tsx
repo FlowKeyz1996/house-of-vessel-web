@@ -1,5 +1,6 @@
 import HeroSection from "./components/secondary-components/HeroSection";
 import Navbar from "./components/primary-components/Navbar";
+import Footer from "./components/primary-components/Footer";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <section className="min-h-screen bg-white">
         {/* Contact */}
       </section>
+      <Footer />
     </main>
   );
 }

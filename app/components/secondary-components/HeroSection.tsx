@@ -80,7 +80,7 @@ const HeroSection = () => {
           House of Vessels
         </h1>
 
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-[#FFA600]">
+        <p className="mt-6 max-w-3xl text-lg leading-8 text-white">
           Raising vessels of honour through the transforming power of 
           Word, the ministry of the Holy Spirit, fervent prayer, and a life of
           worship.
