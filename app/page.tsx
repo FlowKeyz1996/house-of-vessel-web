@@ -6,7 +6,7 @@ import AboutUsSection from "./components/secondary-components/AboutUsSection";
 export default function Home() {
   return (
     <main>
-      <Navbar />
+      
       <HeroSection />
 
      
@@ -35,7 +35,7 @@ export default function Home() {
       <section className="min-h-screen bg-white">
         
       </section> */}
-      <Footer />
+    
     </main>
   );
 }
