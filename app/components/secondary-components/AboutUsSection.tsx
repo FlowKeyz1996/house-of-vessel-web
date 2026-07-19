@@ -64,7 +64,7 @@ const AboutUsSection = () => {
           </p>
 
           {/* Stats */}
-          <div className="mt-10 grid grid-cols-3 gap-6">
+          <div className="mt-10 grid sm:grid-cols-3 gap-4">
             <div>
               <h3 className="text-4xl font-bold text-[#6b1b9a]">100%</h3>
               <p className="mt-2 text-gray-600">Christ Centred</p>
